@@ -1,0 +1,129 @@
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+.jumbotron {
+  position: relative;
+  background: none !important;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.circuit-big1,
+.circuit-big2 {
+  display: block;
+  position: absolute;
+  height: 100%;
+}
+
+.circuit-big1 {
+  top: 0px;
+  left: -70px;
+}
+
+.circuit-big2 {
+  top: 0px;
+  right: -70px;
+}
+
+.jumbotron img {
+  margin-top: 50px;
+}
+
+.jumbotron h3 {
+  color: #F09822;
+  margin: 20px 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.jumbotron h1 {
+
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.centering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .circuit-big1 {
+    left: -192px;
+  }
+
+  .circuit-big2 {
+
+    right: -192px;
+  }
+}
+
+/* custom */
+@media (min-width: 550px) and (max-width: 768px) {
+  .circuit-big1 {
+    left: -100px;
+  }
+
+  .circuit-big2 {
+    right: -100px;
+  }
+
+  .jumbotron h3 {
+    font-size: 22px;
+  }
+
+  .jumbotron h1 {
+    font-size: 35px;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .circuit-big1 {
+    left: -82px;
+  }
+
+  .circuit-big2 {
+    right: -82px;
+  }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .circuit-big1 {
+    left: -152px;
+  }
+
+  .circuit-big2 {
+    right: -152px;
+  }
+
+
+
+  .jumbotron h3 {
+    margin: 20px 0 5px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .jumbotron h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .jumbotron img {
+    margin-top: 0;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

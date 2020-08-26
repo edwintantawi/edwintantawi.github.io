@@ -1,0 +1,74 @@
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+footer {
+  padding-top: 10px;
+  border-top: 3px solid #F09822;
+}
+
+footer .circuit-small1 {
+  top: 0;
+  left: -0px;
+}
+
+footer .circuit-small2 {
+  top: 0;
+  right: -200px;
+}
+
+
+
+footer h3,
+footer h3 span {
+  font-family: 'Aquire', sans-serif;
+}
+
+footer h3 span {
+  color: #F09822;
+}
+
+footer h3 {
+  font-size: 16px;
+  margin: 25px;
+}
+
+footer #social-media a {
+  color: white;
+  margin: 0 10px;
+}
+
+footer p {
+  margin: 20px;
+  font-weight: 200;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer #social-media a:hover {
+  color: #f097227a;
+  text-decoration: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  footer h3 {
+    font-size: 26px;
+  }
+
+  footer #social-media a {
+    margin: 0 18px;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

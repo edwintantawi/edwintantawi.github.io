@@ -1,0 +1,43 @@
+@import '/assets/styles/jumbotron.css';
+@import '/assets/styles/navbar.css';
+@import '/assets/styles/footer.css';
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+/*
+font-family: 'Orbitron', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* 
+font-family: 'Open Sans', sans-serif;
+*/
+@font-face {
+  font-family: Aquire;
+  src: url(/assets/fonts/AquireBold.otf);
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+}
+
+
+body {
+  background-color: #212529;
+  color: white;
+}
+
+hr {
+  border: 2px solid #F09822;
+  width: 60%;
+  margin: 6px auto;
+  border-radius: 2px;
+}

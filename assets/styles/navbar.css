@@ -1,0 +1,64 @@
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+nav a.navbar-brand img {
+  width: 50px;
+}
+
+nav {
+  -webkit-transition: ease all 1s;
+  -moz-transition: ease all 1s;
+  -o-transition: ease all 1s;
+}
+
+nav .nav-link {
+  position: relative;
+}
+
+nav .nav-link::after {
+  display: none;
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: aliceblue;
+  transition: .3s ease-in;
+}
+
+nav .nav-link:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.darkNav {
+  background-color: #212529;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  nav .nav-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    transition: .3s ease-in;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
