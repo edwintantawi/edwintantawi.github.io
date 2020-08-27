@@ -8,6 +8,7 @@ nav {
   -webkit-transition: ease all 1s;
   -moz-transition: ease all 1s;
   -o-transition: ease all 1s;
+  z-index: 100 !important;
 }
 
 nav .nav-link {
