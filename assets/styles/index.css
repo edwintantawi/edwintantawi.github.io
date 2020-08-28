@@ -35,8 +35,9 @@ body {
 }
 
 hr {
-  border: 2px solid #F09822;
+  background-color: #F09822;
   width: 60%;
+  height: 2px;
   margin: 6px auto;
   border-radius: 2px;
 }

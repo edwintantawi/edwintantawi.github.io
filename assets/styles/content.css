@@ -14,18 +14,6 @@ section h2 {
 }
 
 
-section figure.figure {
-  background-color: #F09822;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  padding: 8px;
-}
-
-section figure.figure:hover {
-  cursor: pointer;
-}
-
-
 section h3 {
   color: #353535;
   font-weight: 900;
@@ -46,8 +34,8 @@ section a {
 
 section .card {
   padding: 4px;
-  margin-bottom: 20px;
-  background-color: #F09822;
+  margin-bottom: 0;
+  background: none;
 }
 
 section .card:hover {
@@ -123,10 +111,6 @@ div.point-des p {
   section {
     padding: 0px 0 120px;
 
-  }
-
-  section figure {
-    border-bottom: 5px solid #F09822;
   }
 
   section h2 {

@@ -49,6 +49,41 @@
   align-items: center;
 }
 
+/* 
+.arrow {
+  margin: 50px auto 0;
+  width: 1px;
+  height: 75px;
+  background-color: white;
+
+  position: relative;
+  border-radius: 1px;
+}
+
+.arrow::before {
+  content: '';
+  height: 7px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -1px;
+  right: -1.8px;
+  transform: rotate(35deg);
+  border-radius: 1px;
+}
+
+.arrow::after {
+  content: '';
+  height: 7px;
+  width: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -1px;
+  left: -1.8px;
+  transform: rotate(-35deg);
+  border-radius: 1px;
+} */
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
