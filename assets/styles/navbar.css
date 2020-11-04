@@ -13,20 +13,20 @@ nav {
 
 nav .nav-link {
   position: relative;
-  font-family: 'Aquire', sans-serif;
+  font-family: "Aquire", sans-serif;
 }
 
 nav .nav-link::after {
   display: none;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 5px;
   right: 0;
   width: 0%;
   height: 2px;
   border-radius: 2px;
-  background-color: #F09822;
-  transition: .3s ease-in;
+  background-color: #f09822;
+  transition: 0.3s ease-in;
 }
 
 nav .nav-link:hover::after {
@@ -39,17 +39,10 @@ nav .nav-link:hover::after {
   background-color: #212529;
 }
 
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   nav .nav-link::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     bottom: 5px;
@@ -57,13 +50,10 @@ nav .nav-link:hover::after {
     width: 0%;
     height: 3px;
     border-radius: 3px;
-    transition: .3s ease-in;
+    transition: 0.3s ease-in;
   }
 
   nav a.navbar-brand img {
     width: 45px;
   }
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
