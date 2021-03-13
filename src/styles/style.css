@@ -379,7 +379,7 @@ header.hero .container {
 }
 .hero__text a {
   display: inline-block;
-  margin-top: 28px;
+  margin-top: 36px;
 }
 
 .hero__image {
@@ -424,6 +424,7 @@ header.hero .container {
 
 .techstack__content img {
   width: 48px;
+  height: 48px;
   padding: 6px;
   cursor: crosshair;
   transition: 250ms;
@@ -525,6 +526,7 @@ header.hero .container {
 
   .techstack__content img {
     width: 58px;
+    height: 58px;
   }
 }
 /* md */
@@ -562,6 +564,7 @@ header.hero .container {
 
   .techstack__content img {
     width: 72px;
+    height: 72px;
     padding: 12px;
   }
 }
