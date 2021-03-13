@@ -80,7 +80,7 @@ p {
 }
 
 hr {
-  height: 3px;
+  height: 1.5px;
   border: none;
 }
 
@@ -104,7 +104,6 @@ a {
 .hr-sm {
   background-color: var(--accent);
   width: 60px;
-  height: 2px;
 }
 
 /* Helper class */
@@ -174,6 +173,7 @@ a {
   padding: 16px 0;
   position: fixed;
   width: 100%;
+  z-index: 9;
 }
 .navbar__brand {
   height: 30px;
@@ -409,11 +409,89 @@ header.hero .container {
 /* section content */
 .ido__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px 16px;
 }
 .ido__content__item hr {
   margin: 4px 0 8px;
+}
+
+.techstack__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.techstack__content img {
+  width: 48px;
+  padding: 6px;
+  cursor: crosshair;
+  transition: 250ms;
+}
+
+.techstack__content img:hover {
+  transform: scale(1.3);
+}
+
+.project__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px 16px;
+}
+
+.project__content__item .image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project__content__item .image:hover::after {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.project__content__item .image:hover > .action {
+  display: grid;
+}
+
+.project__content__item .image::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 5px;
+  right: 0;
+  transition: 250ms ease-in-out;
+}
+.project__content__item .image .action {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: none;
+  place-items: center;
+  z-index: 2;
+}
+.project__content__item .image i {
+  color: #ffffff;
+  font-size: 30px;
+  padding: 14px;
+  transition: 250ms;
+}
+.project__content__item .image i:hover {
+  transform: scale(1.2);
+}
+.project__content__item .image img {
+  width: 100%;
+}
+.project__content__item .image .title {
+  position: absolute;
+  bottom: 6.8px;
+  right: 0;
+  background-image: var(--grad-horizontal);
+  padding: 3px 32px;
+  border-top-left-radius: 60px;
+  font-weight: var(--semi-bold);
 }
 
 /* media query */
@@ -443,6 +521,10 @@ header.hero .container {
   }
   .section__heading img {
     width: 16px;
+  }
+
+  .techstack__content img {
+    width: 58px;
   }
 }
 /* md */
@@ -476,6 +558,11 @@ header.hero .container {
   }
   .ido__content__item hr {
     margin: 8px 0 12px;
+  }
+
+  .techstack__content img {
+    width: 72px;
+    padding: 12px;
   }
 }
 /* lg */
