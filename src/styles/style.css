@@ -164,12 +164,12 @@ a {
 /* nav */
 .navbar {
   background-color: var(--primary);
-  padding: 12px 0;
+  padding: 16px 0;
   position: fixed;
   width: 100%;
 }
 .navbar__brand {
-  height: 36px;
+  height: 30px;
 }
 .navbar__navigation {
   font-family: var(--orbitron);
@@ -199,7 +199,7 @@ a {
 .navbar__navigation.mobile {
   display: flex;
   position: fixed;
-  top: 60px;
+  top: 62px;
   bottom: 0;
   right: 0;
   width: 80%;
@@ -236,7 +236,7 @@ a {
 }
 .navbar__navigation.mobile li {
   margin: 0 0 32px 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .navbar__toggler {
