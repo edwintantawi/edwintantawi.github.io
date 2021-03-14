@@ -346,11 +346,15 @@ a {
 
 /* Header and Hero */
 header:not(.hero) {
-  padding: calc(69px + 50px) 0;
+  padding: calc(69px + 30px) 0 30px;
 }
 
 header.hero .container {
   height: 100vh;
+}
+
+.header__description {
+  max-width: 500px;
 }
 
 .hero__text {
@@ -531,160 +535,4 @@ header.hero .container {
 
 .footer hr {
   margin-bottom: 30px;
-}
-
-/* media query */
-/* sm */
-@media screen and (min-width: 566px) {
-  main {
-    padding: 0 50px;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-  .hero__text .big-heading {
-    font-size: 5vw;
-  }
-  .btn {
-    font-size: 16px;
-  }
-  .btn-lg {
-    padding: 16px 36px;
-  }
-  .hero__text a {
-    margin-top: 40px;
-  }
-  h2 {
-    font-size: 26px;
-  }
-
-  .section__heading img {
-    width: 16px;
-  }
-  .project__content {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-  .ido__content {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .ido__content__item img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .techstack__content img {
-    width: 58px;
-    height: 58px;
-  }
-
-  .whatnext__content__title {
-    font-size: 64px;
-  }
-}
-/* custom breakpoints */
-@media screen and (min-width: 721px) {
-  .ido__content {
-    text-align: left;
-  }
-  .ido__content p {
-    width: 100%;
-    margin: 0;
-  }
-  .ido__content__item {
-    place-items: unset;
-  }
-  section {
-    padding: 60px 0;
-  }
-}
-/* md */
-@media screen and (min-width: 768px) {
-  .hero__text .mini-heading {
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
-
-  .hero__text .big-heading {
-    font-size: 56px;
-    margin-top: 16px;
-  }
-  h1 {
-    font-size: 80px;
-  }
-  p {
-    font-size: 16px;
-  }
-  h2 {
-    font-size: 32px;
-  }
-  .section__heading img {
-    width: 18px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  .section__heading {
-    margin-bottom: 50px;
-  }
-  .project__content__item .image .title {
-    font-size: 16px;
-  }
-
-  .techstack__content img {
-    width: 74px;
-    height: 74px;
-    padding: 12px;
-  }
-}
-/* lg */
-@media screen and (min-width: 992px) {
-  .navbar__navigation {
-    display: block;
-  }
-  .navbar__toggler {
-    display: none;
-  }
-  .container-fluid {
-    padding: 0 30px;
-  }
-  .side {
-    display: flex;
-  }
-  main {
-    padding: 0 150px;
-  }
-
-  .hero__text .big-heading {
-    font-size: 56px;
-    margin-top: 16px;
-  }
-  h1 {
-    font-size: 80px;
-  }
-}
-/* xl */
-@media screen and (min-width: 1200px) {
-  .side__left {
-    left: 35px;
-  }
-  .side__right {
-    right: 35px;
-  }
-  .container-fluid {
-    padding: 0 50px;
-  }
-}
-/* xxl */
-@media screen and (min-width: 1400px) {
-  .container {
-    max-width: 980px;
-  }
-  .hero__text .big-heading {
-    font-size: 72px;
-  }
-  h1 {
-    font-size: 80px;
-  }
 }
