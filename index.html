@@ -68,8 +68,10 @@
             <span></span>
           </div>
 
-          <div class="navbar__navigation mobile align-items-center">
-            <ul>
+          <div
+            class="navbar__navigation mobile align-items-center justify-content-center"
+          >
+            <ul class="flex flex-column align-items-center">
               <li><a href="index.html" class="active">HOME</a></li>
               <li><a href="src/pages/education.html">ACADEMIC</a></li>
               <li><a href="src/pages/about.html">ABOUT ME</a></li>
@@ -114,7 +116,7 @@
 
     <!-- side list -->
     <div class="side side__left">
-      <div class="side__left__socialmedia">
+      <div class="side__left__socialmedia flex flex-column align-items-center">
         <a href="https://wa.me/+6282388386923">
           <i class="fab fa-whatsapp"></i>
         </a>
@@ -221,7 +223,9 @@
             <hr class="hr-lg" />
           </div>
 
-          <div class="section__content techstack__content">
+          <div
+            class="section__content techstack__content justify-content-center"
+          >
             <img
               src="src/assets/icons/tech-stack/html.svg"
               alt="html"
@@ -405,10 +409,35 @@
             <h2>What’s next ?</h2>
             <hr class="hr-lg" />
           </div>
-          <!-- isi -->
+
+          <div class="section__content whatnext__content">
+            <div class="container flex flex-column text-center">
+              <span class="whatnext__content__title">Get In Touch</span>
+              <p>
+                Is there anything I can help you with? My inbox and social media
+                are always open to you, feel free to ask, I will try my best for
+                you. Thank you for visiting.
+              </p>
+              <div class="whatnext__content__button">
+                <a href="mailto:edwintantawi@gmail.com" class="btn btn-lg"
+                  >Hi Edwin ...</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <!-- END: main -->
+
+    <!-- START: footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <hr class="hr-lg" />
+        <p>Design & Build With 💕 by Edwin Tantawi</p>
+        <p>copyright &copy; 2021</p>
+      </div>
+    </footer>
+    <!-- END: footer -->
   </body>
 </html>
