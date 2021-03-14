@@ -186,7 +186,7 @@ a {
 .navbar__navigation {
   font-family: var(--orbitron);
   font-weight: var(--medium);
-  font-size: 10.05px;
+  font-size: 10.8px;
   letter-spacing: 3px;
   padding: 0;
   display: none;
@@ -196,6 +196,7 @@ a {
   margin-left: 50px;
 }
 .navbar__navigation a {
+  padding: 8px;
   transition: 350ms;
 }
 .navbar__navigation a.active,
@@ -342,7 +343,11 @@ a {
   color: var(--accent);
 }
 
-/* Header Hero */
+/* Header and Hero */
+header:not(.hero) {
+  padding: calc(69px + 50px) 0;
+}
+
 header.hero .container {
   height: 100vh;
 }
