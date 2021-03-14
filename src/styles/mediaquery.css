@@ -47,6 +47,36 @@
   .whatnext__content__title {
     font-size: 64px;
   }
+
+  .timeline__tree::before {
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .timeline__tree__container {
+    width: 50%;
+  }
+
+  .timeline__tree__container.left {
+    padding: 16px 24px 16px 0px;
+  }
+  .timeline__tree__container.left::after {
+    right: -13px;
+    left: auto;
+  }
+
+  .timeline__tree__container.right {
+    left: 50%;
+  }
+  .timeline__tree__container.right::after {
+    right: -13px;
+  }
+
+  .timeline__tree__content span {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 3px;
+  }
 }
 /* custom breakpoints */
 @media screen and (min-width: 721px) {
