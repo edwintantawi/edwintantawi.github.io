@@ -69,7 +69,7 @@
     left: 50%;
   }
   .timeline__tree__container.right::after {
-    right: -13px;
+    left: -13px;
   }
 
   .timeline__tree__content span {
