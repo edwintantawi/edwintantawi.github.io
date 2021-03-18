@@ -78,6 +78,7 @@ p {
   color: var(--gray);
   font-size: 13px;
   margin-bottom: 12px;
+  line-height: 1.5;
 }
 hr {
   height: 1.5px;
@@ -182,7 +183,7 @@ a {
 .navbar__navigation {
   font-family: var(--orbitron);
   font-weight: var(--medium);
-  font-size: 10.8px;
+  font-size: 10.98px;
   letter-spacing: 3px;
   padding: 0;
   display: none;
@@ -198,6 +199,7 @@ a {
 .navbar__navigation a {
   padding: 8px;
   transition: 350ms;
+  text-transform: uppercase;
 }
 .navbar__navigation a.active,
 .navbar__navigation a.active:hover {
@@ -378,6 +380,7 @@ header.hero .container {
   color: #ffaa00;
   margin: 6px 0 16px;
   line-height: 1.1;
+  font-style: italic;
 }
 .hero__text p {
   width: 100%;
