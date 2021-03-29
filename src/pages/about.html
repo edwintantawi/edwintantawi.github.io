@@ -16,6 +16,7 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
     <link rel="stylesheet" href="../styles/mediaquery.css" />
     <!-- fontawesome -->
     <link
@@ -55,7 +56,7 @@
             <a
               href="../assets/documents/resume.pdf"
               class="btn btn-sm"
-              target="__blank"
+              target="__blank" rel="noopener noreferrer"
               >Resume</a
             >
           </li>
@@ -86,7 +87,7 @@
                 <a
                   href="../assets/documents/resume.pdf"
                   class="btn btn-sm"
-                  target="__blank"
+                  target="__blank" rel="noopener noreferrer"
                   >Resume</a
                 >
               </li>
@@ -94,35 +95,35 @@
             <div class="social-media">
               <a
                 href="https://wa.me/+6282388386923"
-                target="__blank"
+                target="__blank" rel="noopener noreferrer"
                 aria-label="Whatsapp"
               >
                 <i class="fab fa-whatsapp"></i>
               </a>
               <a
                 href="https://instagram.com/wintantawi"
-                target="__blank"
+                target="__blank" rel="noopener noreferrer"
                 aria-label="Instagram"
               >
                 <i class="fab fa-instagram"></i>
               </a>
               <a
                 href="https://facebook.com/edwintantawi.5"
-                target="__blank"
+                target="__blank" rel="noopener noreferrer"
                 aria-label="Facebook"
               >
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/edwin-tantawi-909138193/"
-                target="__blank"
+                target="__blank" rel="noopener noreferrer"
                 aria-label="Linkedin"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
               <a
                 href="https://github.com/edwintantawi"
-                target="__blank"
+                target="__blank" rel="noopener noreferrer"
                 aria-label="Github"
               >
                 <i class="fab fa-github"></i>
@@ -134,43 +135,66 @@
     </nav>
     <!-- END: navbar -->
 
+   
     <!-- START: side list -->
-    <div class="side side__left">
+    <aside class="side side__left">
       <div class="side__left__socialmedia flex flex-column align-items-center">
-        <a href="https://wa.me/+6282388386923" target="__blank">
+        <a
+          href="https://wa.me/+6282388386923"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="https://instagram.com/wintantawi" target="__blank">
+        <a
+          href="https://instagram.com/wintantawi"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://facebook.com/edwintantawi.5" target="__blank">
+        <a
+          href="https://facebook.com/edwintantawi.5"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-facebook-f"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/edwin-tantawi-909138193/"
           target="__blank"
+          rel="noopener noreferrer"
         >
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://github.com/edwintantawi" target="__blank">
+        <a
+          href="https://github.com/edwintantawi"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-github"></i>
         </a>
       </div>
       <div class="line"></div>
-    </div>
-    <div class="side side__right">
+    </aside>
+
+    <aside class="side side__right">
       <div class="side__right__email">
-        <a href="mailto:edwintantawi@gmail.com" target="__blank">
+        <a
+          href="mailto:edwintantawi@gmail.com"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
           <span>edwintantawi@gmail.com</span>
         </a>
       </div>
       <div class="line"></div>
-    </div>
+    </aside>
     <!-- END: side list -->
 
     <!-- START: main -->
     <main>
-      <header>
+      <header class="header-page">
         <div class="container">
           <h1 class="header__title">About Me</h1>
           <p class="header__description">
@@ -181,34 +205,41 @@
 
       <section class="aboutme">
         <div class="container">
-          <h2>Hi, nice to meet you ..</h2>
-          <p>
-            My name is Edwin Tantawi, I am a student at STMIK Mikroskil Medan, I
-            live in Tanjung Morawa, Deli Serdang district, North Sumatra,
-            Indonesia.
-          </p>
-          <p>
-            My current activity is as a student, and while deepening the world
-            of web development, currently focusing on the Web Frontend, the
-            intention is that if I am already proficient I want to also enter
-            the Web Backend, and become a Fullstack Web Developer. So that I can
-            build a solution to an existing problem easily.
-          </p>
-          <p>
-            Even though it is not easy and it takes a long time, I believe I can
-            achieve it if I practice and learn continuously.
-          </p>
-          <p>
-            as for some of the skills I have, which you can see in
-            <a href="../../index.html">here</a>.
-          </p>
-          <p>
-            Nice to meet you, if you want to talk directly, please contact me
-            via email, or my social media at <a href="contact.html">here</a>
-            do not hesitate to contact me, whether acquainted or asking, I will
-            try to help.
-          </p>
-        </div>
+          <article>
+            <header>
+              <h2>Hi, nice to meet you ..</h2>
+            </header>
+            <div class="aboutme__mypicture">
+              <img src="../assets/images/pic.jpg" class="picture" alt="Edwin tantawi Picture">
+            </div>
+            <p>
+              My name is <strong>Edwin Tantawi</strong>, I am a student at STMIK Mikroskil Medan, I
+              live in Tanjung Morawa, Deli Serdang district, North Sumatra,
+              Indonesia.
+            </p>
+            <p>
+              My current activity is as a student, and while deepening the world
+              of web development, currently focusing on the Web Frontend, the
+              intention is that if I am already proficient I want to also enter
+              the Web Backend, and become a Fullstack Web Developer. So that I can
+              build a solution to an existing problem easily.
+            </p>
+            <p>
+              Even though it is not easy and it takes a long time, I believe I can
+              achieve it if I practice and learn continuously.
+            </p>
+            <p>
+              as for some of the skills I have, which you can see in
+              <a href="../../index.html" class="ref">here</a>.
+            </p>
+            <p>
+              Nice to meet you, if you want to talk directly, please contact me
+              via email, or my social media at <a href="contact.html" class="ref">here</a>
+              do not hesitate to contact me, whether acquainted or asking, I will
+              try to help.
+            </p>
+          </div>
+          </article>
       </section>
     </main>
     <!-- END: main -->

@@ -95,6 +95,15 @@ a {
   color: var(--white);
 }
 
+a.ref {
+  color: white;
+  transition: 350ms;
+  font-weight: var(--bold);
+}
+a.ref:hover {
+  color: var(--accent);
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                   BUTTON                                   */
 /* -------------------------------------------------------------------------- */
@@ -347,10 +356,10 @@ a {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                               HEADER AND HERO                              */
+/*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
 
-header:not(.hero) {
+header.header-page {
   padding: calc(69px + 30px) 0 12px;
 }
 
@@ -360,43 +369,6 @@ header.hero .container {
 
 .header__description {
   max-width: 500px;
-}
-
-.hero__text {
-  width: 100%;
-}
-.hero__text .mini-heading {
-  font-family: var(--orbitron);
-  color: var(--accent);
-  display: inline-block;
-  font-size: 14px;
-  margin-bottom: 18px;
-}
-
-.hero__text .big-heading {
-  display: inline-block;
-  font-size: 6vw;
-  font-weight: var(--semi-bold);
-  color: #ffaa00;
-  margin: 6px 0 16px;
-  line-height: 1.1;
-  font-style: italic;
-}
-.hero__text p {
-  width: 100%;
-  max-width: 500px;
-  color: var(--gray);
-}
-.hero__text a {
-  margin-top: 36px;
-}
-
-.hero__image {
-  width: 30%;
-}
-.hero__image img {
-  width: 100%;
-  max-width: 400px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -419,127 +391,9 @@ header.hero .container {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                               SECTION CONTENT                              */
+/*                                   FOOTER                                   */
 /* -------------------------------------------------------------------------- */
 
-.ido__content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px 16px;
-  text-align: center;
-}
-
-.ido__content__item {
-  display: grid;
-  place-items: center;
-}
-.ido__content__item img {
-  width: 70px;
-  height: 70px;
-  margin: 0 0 6px;
-}
-.ido__content__item p {
-  max-width: 316px;
-  /* margin: 0 auto; */
-}
-.ido__content__item hr {
-  margin: 4px 0 8px;
-}
-
-.techstack__content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.techstack__content img {
-  width: 50px;
-  height: 50px;
-  padding: 6px;
-  cursor: crosshair;
-  transition: 250ms;
-}
-
-.techstack__content img:hover {
-  transform: scale(1.3);
-}
-
-.project__content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px 16px;
-}
-
-.project__content__item .image {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.project__content__item .image:hover::after {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.project__content__item .image:hover > .action {
-  display: grid;
-}
-
-.project__content__item .image::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 5px;
-  right: 0;
-  transition: 250ms ease-in-out;
-}
-.project__content__item .image .action {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100%;
-  display: none;
-  place-items: center;
-  z-index: 2;
-}
-.project__content__item .image i {
-  color: #ffffff;
-  font-size: 30px;
-  padding: 14px;
-  transition: 250ms;
-}
-.project__content__item .image i:hover {
-  transform: scale(1.2);
-}
-.project__content__item .image img {
-  width: 100%;
-}
-.project__content__item .image .title {
-  position: absolute;
-  bottom: 6.8px;
-  right: 0;
-  background-image: var(--grad-horizontal);
-  padding: 3px 32px;
-  border-top-left-radius: 60px;
-  font-weight: var(--semi-bold);
-  font-size: 14px;
-}
-
-.whatnext__content__title {
-  font-size: 10vw;
-  font-weight: var(--semi-bold);
-  color: rgb(148, 148, 148);
-  line-height: 1;
-  margin-bottom: 22px;
-}
-.whatnext__content p {
-  max-width: 500px;
-  margin: 0 auto;
-}
-.whatnext__content__button {
-  margin: 32px 0 28px;
-}
-/* footer */
 .footer {
   margin-top: 50px;
   padding: 30px 0;
@@ -547,119 +401,4 @@ header.hero .container {
 
 .footer hr {
   margin-bottom: 30px;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                  TIME LINE                                 */
-/* -------------------------------------------------------------------------- */
-
-.timeline__tree {
-  position: relative;
-  margin: 0 auto;
-}
-
-.timeline__tree::before {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  background-color: white;
-}
-
-.timeline__tree__container {
-  width: 100%;
-  position: relative;
-  margin: 0;
-}
-.timeline__tree__container::after {
-  content: '';
-  width: 26px;
-  height: 26px;
-  background-color: var(--secondary);
-  position: absolute;
-  border-radius: 99px;
-  border: 4px solid var(--accent);
-}
-.timeline__tree__container.left {
-  left: 0;
-  padding: 16px 0 16px 24px;
-}
-
-.timeline__tree__container.left::after {
-  right: auto;
-  left: -10px;
-  bottom: 50%;
-  transform: translateY(50%);
-}
-
-.timeline__tree__container.right {
-  padding: 16px 0 16px 24px;
-}
-.timeline__tree__container.right::after {
-  left: -10px;
-  bottom: 50%;
-  transform: translateY(50%);
-}
-
-.timeline__tree__content {
-  cursor: pointer;
-  background-color: rgb(44, 44, 44);
-  padding: 16px 24px;
-  border-radius: 4px;
-  transition: 300ms ease-in-out;
-}
-
-.timeline__tree__content:hover {
-  transform: translateY(-8px);
-}
-
-.timeline__tree__content span {
-  display: inline-block;
-  font-size: 18px;
-  font-family: var(--orbitron);
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 3px;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                  ABOUT ME                                  */
-/* -------------------------------------------------------------------------- */
-.aboutme p {
-  margin-top: 26px;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                   CONTACT                                  */
-/* -------------------------------------------------------------------------- */
-
-.contact .container {
-  display: flex;
-  flex-direction: column;
-}
-.contact ul {
-  flex: 1;
-  margin-bottom: 32px;
-}
-.contact li {
-  margin-bottom: 18px;
-  list-style-type: none;
-}
-.contact li a {
-  display: flex;
-  align-items: center;
-  transition: 350ms;
-}
-.contact li a:hover {
-  transform: translateY(-3px);
-  color: var(--accent);
-}
-.contact li i {
-  font-size: 18px;
-  width: 28px;
-  margin-right: 8px;
-}
-
-.contact__maps {
-  flex: 1;
 }

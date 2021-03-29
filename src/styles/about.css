@@ -1,0 +1,15 @@
+/* -------------------------------------------------------------------------- */
+/*                                  ABOUT ME                                  */
+/* -------------------------------------------------------------------------- */
+.aboutme p {
+  margin-top: 26px;
+}
+.aboutme__mypicture {
+  /* float: left; */
+  margin: 24px 0 -20px;
+}
+.aboutme__mypicture img {
+  width: 100px;
+  border-radius: 100px;
+  border: 3px solid var(--accent);
+}

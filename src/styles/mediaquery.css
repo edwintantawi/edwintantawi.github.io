@@ -1,4 +1,12 @@
 /* media query */
+
+/* custom breakpoints */
+@media screen and (min-width: 400px) {
+  .aboutme__mypicture {
+    float: left;
+    margin: 24px 24px 0;
+  }
+}
 /* sm */
 @media screen and (min-width: 566px) {
   main {
@@ -47,6 +55,25 @@
   .whatnext__content__title {
     font-size: 64px;
   }
+}
+/* custom breakpoints */
+@media screen and (min-width: 721px) {
+  .ido__content {
+    text-align: left;
+  }
+  .ido__content p {
+    width: 100%;
+    margin: 0;
+  }
+  .ido__content__item {
+    place-items: unset;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .contact .container {
+    flex-direction: row;
+  }
 
   .timeline__tree::before {
     left: 50%;
@@ -77,24 +104,9 @@
     letter-spacing: 2px;
     margin-bottom: 3px;
   }
-}
-/* custom breakpoints */
-@media screen and (min-width: 721px) {
-  .ido__content {
-    text-align: left;
-  }
-  .ido__content p {
-    width: 100%;
-    margin: 0;
-  }
-  .ido__content__item {
-    place-items: unset;
-  }
-  section {
-    padding: 60px 0;
-  }
-  .contact .container {
-    flex-direction: row;
+
+  .timeline__tree__content ul > ul {
+    padding: 0 16px 16px 40px;
   }
 }
 /* md */
@@ -111,7 +123,8 @@
   h1 {
     font-size: 80px;
   }
-  p {
+  p,
+  .timeline__tree__content li {
     font-size: 16px;
   }
   h2 {
@@ -136,6 +149,14 @@
     padding: 12px;
   }
 
+  .aboutme__mypicture {
+    margin: 40px 30px 0 30px;
+  }
+  .aboutme__mypicture img {
+    width: 150px;
+    border: 5px solid var(--accent);
+  }
+
   .contact li i {
     font-size: 32px;
     margin-right: 18px;
@@ -158,7 +179,7 @@
   main {
     padding: 0 150px;
   }
-  header:not(.hero) {
+  header.header-page {
     padding: calc(69px + 100px) 0 50px;
   }
 

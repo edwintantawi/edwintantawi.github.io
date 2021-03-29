@@ -1,0 +1,101 @@
+/* -------------------------------------------------------------------------- */
+/*                                  TIME LINE                                 */
+/* -------------------------------------------------------------------------- */
+
+.timeline__tree {
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline__tree::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: white;
+}
+
+.timeline__tree__container {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  transition: 350ms;
+}
+
+.timeline__tree__container::after {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background-color: var(--secondary);
+  position: absolute;
+  border-radius: 99px;
+  border: 4px solid var(--accent);
+  transition: 350ms;
+}
+
+/* .timeline__tree__container::after {
+  transform: scale(5);
+} */
+
+.timeline__tree__container.left {
+  left: 0;
+  padding: 16px 0 16px 24px;
+}
+
+.timeline__tree__container.left::after {
+  right: auto;
+  left: -10px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.timeline__tree__container.right {
+  padding: 16px 0 16px 24px;
+}
+.timeline__tree__container.right::after {
+  left: -10px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.timeline__tree__content {
+  cursor: default;
+  background-color: rgb(44, 44, 44);
+  border-radius: 4px;
+  transition: 300ms ease-in-out;
+}
+
+.timeline__tree__content p {
+  padding: 0 24px 16px;
+}
+/* .timeline__tree__content a {
+    font-weight: var(--bold);
+  } */
+/* .timeline__tree__content a:hover {
+  color: var(--accent);
+} */
+.timeline__tree__content li {
+  padding: 0 24px 16px 0%;
+  font-weight: var(--light);
+  color: var(--gray);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.timeline__tree__content ul > ul {
+  padding: 0 16px 16px;
+}
+
+.timeline__tree__content summary {
+  cursor: pointer;
+  font-size: 18px;
+  font-family: var(--orbitron);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+  outline: none;
+  padding: 16px 24px;
+}
+
+.timeline__tree__content summary::marker {
+  color: var(--accent);
+}
