@@ -1,6 +1,3 @@
-/* -------------------------------------------------------------------------- */
-/*                                  ABOUT ME                                  */
-/* -------------------------------------------------------------------------- */
 .aboutme p {
   margin-top: 26px;
 }
@@ -12,4 +9,27 @@
   width: 100px;
   border-radius: 100px;
   border: 3px solid var(--accent);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 MEDIA QUERY                                */
+/* -------------------------------------------------------------------------- */
+/* media query */
+
+/* custom breakpoints */
+@media screen and (min-width: 400px) {
+  .aboutme__mypicture {
+    float: left;
+    margin: 24px 24px 0;
+  }
+}
+/* md */
+@media screen and (min-width: 768px) {
+  .aboutme__mypicture {
+    margin: 40px 30px 0 30px;
+  }
+  .aboutme__mypicture img {
+    width: 150px;
+    border: 5px solid var(--accent);
+  }
 }

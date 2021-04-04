@@ -8,8 +8,8 @@
   --accent: #ffa800;
   --gray: #9b9b9b;
   --grad-horizontal: linear-gradient(to right, var(--accent), #ff7a00);
-  /* fonts */
 
+  /* fonts */
   --orbitron: 'Orbitron', sans-serif;
 
   --light: 300;
@@ -54,6 +54,11 @@
   border-radius: 8px;
 }
 
+::selection {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
 body {
   background-color: var(--primary);
   color: var(--white);
@@ -96,14 +101,13 @@ a {
 }
 
 a.ref {
-  color: white;
+  color: var(--white);
   transition: 350ms;
   font-weight: var(--bold);
 }
 a.ref:hover {
   color: var(--accent);
 }
-
 /* -------------------------------------------------------------------------- */
 /*                                   BUTTON                                   */
 /* -------------------------------------------------------------------------- */
@@ -188,6 +192,17 @@ a.ref:hover {
 }
 .navbar__brand {
   height: 30px;
+  width: auto;
+  cursor: pointer;
+}
+.navbar__brand #logo-e {
+  animation: break-left 10s infinite;
+}
+.navbar__brand #logo-t {
+  animation: break-right 10s infinite;
+}
+.navbar__brand #logo-dot {
+  animation: break-dot 10s infinite;
 }
 .navbar__navigation {
   font-family: var(--orbitron);
@@ -246,6 +261,9 @@ a.ref:hover {
   place-items: center;
   padding: 30px 20px;
   font-size: 26px;
+}
+.navbar__navigation.mobile .social-media a:hover {
+  color: var(--accent);
 }
 
 .navbar__navigation.mobile ul {
@@ -401,4 +419,173 @@ header.hero .container {
 
 .footer hr {
   margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 ANIMATIONS                                 */
+/* -------------------------------------------------------------------------- */
+@keyframes break-left {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(-20px);
+  }
+  70% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes break-right {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+
+  60% {
+    transform: translateX(20px);
+  }
+  70% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes break-dot {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-80px);
+  }
+  60% {
+    transform: translateX(-80px);
+  }
+  70% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 MEDIA QUERY                                */
+/* -------------------------------------------------------------------------- */
+/* media query */
+/* sm */
+@media screen and (min-width: 566px) {
+  main {
+    padding: 0 50px;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+  .hero__text .big-heading {
+    font-size: 5vw;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .btn-lg {
+    padding: 16px 36px;
+  }
+  .hero__text a {
+    margin-top: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+
+  .section__heading img {
+    width: 16px;
+  }
+}
+/* custom breakpoints */
+@media screen and (min-width: 721px) {
+  section {
+    padding: 60px 0;
+  }
+}
+/* md */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+  p,
+  .timeline__tree__content li {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .section__heading img {
+    width: 18px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+/* lg */
+@media screen and (min-width: 992px) {
+  .navbar__navigation {
+    display: block;
+  }
+  .navbar__toggler {
+    display: none;
+  }
+  .container-fluid {
+    padding: 0 30px;
+  }
+  .side {
+    display: flex;
+  }
+  main {
+    padding: 0 150px;
+  }
+  header.header-page {
+    padding: calc(69px + 100px) 0 50px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+}
+/* xl */
+@media screen and (min-width: 1200px) {
+  .side__left {
+    left: 35px;
+  }
+  .side__right {
+    right: 35px;
+  }
+  .container-fluid {
+    padding: 0 50px;
+  }
+}
+/* xxl */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 980px;
+  }
+  h1 {
+    font-size: 80px;
+  }
 }

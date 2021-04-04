@@ -1,7 +1,3 @@
-/* -------------------------------------------------------------------------- */
-/*                                    HOME                                    */
-/* -------------------------------------------------------------------------- */
-
 .hero__text {
   width: 100%;
 }
@@ -91,6 +87,7 @@
 .project__content__item .image {
   position: relative;
   overflow: hidden;
+  padding: 0;
 }
 
 .project__content__item .image:hover::after {
@@ -106,7 +103,7 @@
   position: absolute;
   width: 100%;
   top: 0;
-  bottom: 5px;
+  bottom: 7px;
   right: 0;
   transition: 250ms ease-in-out;
 }
@@ -120,14 +117,13 @@
   place-items: center;
   z-index: 2;
 }
-.project__content__item .image i {
-  color: #ffffff;
-  font-size: 30px;
+.project__content__item .image .icons {
+  width: 60px;
   padding: 14px;
   transition: 250ms;
   cursor: pointer;
 }
-.project__content__item .image i:hover {
+.project__content__item .image .icons:hover {
   transform: scale(1.2);
 }
 .project__content__item .image img {
@@ -135,7 +131,7 @@
 }
 .project__content__item .image .title {
   position: absolute;
-  bottom: 6.5px;
+  bottom: 7px;
   right: 0;
   background-image: var(--grad-horizontal);
   padding: 3px 32px;
@@ -157,4 +153,87 @@
 }
 .whatnext__content__button {
   margin: 32px 0 28px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 MEDIA QUERY                                */
+/* -------------------------------------------------------------------------- */
+/* sm */
+@media screen and (min-width: 566px) {
+  .hero__text .big-heading {
+    font-size: 5vw;
+  }
+  .hero__text a {
+    margin-top: 40px;
+  }
+  .project__content {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .ido__content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .techstack__content img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .ido__content__item img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 8px;
+  }
+  .ido__content__item hr {
+    margin: 6px 0 12px;
+  }
+
+  .whatnext__content__title {
+    font-size: 64px;
+  }
+}
+/* custom breakpoints */
+@media screen and (min-width: 721px) {
+  .ido__content {
+    text-align: left;
+  }
+  .ido__content p {
+    width: 100%;
+    margin: 0;
+  }
+  .ido__content__item {
+    place-items: unset;
+  }
+}
+/* md */
+@media screen and (min-width: 768px) {
+  .hero__text .mini-heading {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .hero__text .big-heading {
+    font-size: 56px;
+    margin-top: 12px;
+  }
+  .project__content__item .image .title {
+    font-size: 16px;
+  }
+
+  .techstack__content img {
+    width: 74px;
+    height: 74px;
+    padding: 12px;
+  }
+}
+/* lg */
+@media screen and (min-width: 992px) {
+  .hero__text .big-heading {
+    font-size: 56px;
+  }
+}
+
+/* xxl */
+@media screen and (min-width: 1400px) {
+  .hero__text .big-heading {
+    font-size: 72px;
+  }
 }
